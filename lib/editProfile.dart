@@ -93,7 +93,9 @@ class _EditProfileState extends State<EditProfile> {
             elevation: 1,
             centerTitle: true,
             title: Text(
-              "Edit Contact",
+              (widget.dataID == null)
+              ? "New Contact"
+              : "Edit Contact",
               style: TextStyle(
                   color: Colors.black,
                   fontSize: font18,
